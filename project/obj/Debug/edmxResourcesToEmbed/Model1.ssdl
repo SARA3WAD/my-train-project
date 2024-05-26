@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="projectModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="project">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="username" Type="nvarchar" MaxLength="70" Nullable="false" />
+    <Property Name="pass_word" Type="nvarchar" MaxLength="70" Nullable="false" />
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="phone" Type="int" />
+    <Property Name="gender" Type="varchar" MaxLength="70" />
+    <Property Name="age" Type="int" />
+    <Property Name="city" Type="nvarchar" MaxLength="90" />
+  </EntityType>
+  <EntityContainer Name="projectModelStoreContainer">
+    <EntitySet Name="project" EntityType="Self.project" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

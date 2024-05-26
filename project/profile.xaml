@@ -1,0 +1,33 @@
+﻿<Page x:Class="project.profile"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:project"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="profile">
+
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="robot.jpg"></ImageBrush>
+        </Grid.Background>
+        <Label Content="username:" FontSize="15" HorizontalAlignment="Left" Margin="42,99,0,0" VerticalAlignment="Top"/>
+        <Label Content="password:" FontSize="15" HorizontalAlignment="Left" Margin="42,134,0,0" VerticalAlignment="Top"/>
+        <Label Content="profile page" FontFamily="snap itc" FontSize="15" HorizontalAlignment="Left" Margin="362,39,0,0" VerticalAlignment="Top"/>
+        <Label Content="gender:" FontSize="15" HorizontalAlignment="Left" Margin="42,169,0,0" VerticalAlignment="Top"/>
+        <Label Content="city:" FontSize="15" HorizontalAlignment="Left" Margin="47,204,0,0" VerticalAlignment="Top"/>
+        <Label Content="phone:" FontSize="15" HorizontalAlignment="Left" Margin="47,239,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="text1" HorizontalAlignment="Left" Margin="140,105,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="180" Height="24"/>
+        <TextBox x:Name="text2" HorizontalAlignment="Left" Margin="140,134,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="180" Height="24"/>
+        <TextBox x:Name="text3" HorizontalAlignment="Left" Margin="140,169,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="180" Height="24"/>
+        <TextBox x:Name="text4" HorizontalAlignment="Left" Margin="140,204,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="180" Height="24"/>
+        <TextBox x:Name="text5" HorizontalAlignment="Left" Margin="140,239,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="180" Height="24"/>
+        <DataGrid x:Name="data" Margin="325,102,37,187" SelectionChanged="data_SelectionChanged"/>
+        <Button Content="add" FontFamily="snap itc" FontSize="20" HorizontalAlignment="Left" Margin="81,324,0,0" VerticalAlignment="Top" Height="50" Width="108" Click="Button_Click"/>
+        <Button Content="delete" FontFamily="snap itc" FontSize="20" HorizontalAlignment="Left" Margin="230,324,0,0" VerticalAlignment="Top" Height="50" Width="122" Click="Button_Click_1"/>
+        <Button Content="search" FontFamily="snap itc" FontSize="20" HorizontalAlignment="Left" Margin="458,324,0,0" VerticalAlignment="Top" Height="50" Width="122" Click="Button_Click_2"/>
+        <Button Content="update" FontFamily="snap itc" FontSize="20" HorizontalAlignment="Left" Margin="633,324,0,0" VerticalAlignment="Top" Height="50" Width="97" RenderTransformOrigin="-0.139,0.48" Click="Button_Click_3"/>
+
+    </Grid>
+</Page>
